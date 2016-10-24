@@ -228,9 +228,9 @@ http接口
 
 > 获取老师、班级、学生、实验的对应关系
 
-**_url_**
+**_url_** /user/relation
 
-**_method_** POST
+**_method_** GET
 
 **_header_**
 ```javascript
@@ -240,7 +240,7 @@ http接口
   "X-Rain-UserId": {userId}
 }
 ```
-**_body_**
+**_query_**
 ```javascript
 {
 }
@@ -249,7 +249,9 @@ http接口
 ```javascript
 {
   "status": 0, 
-  "message": 'ok'
+  "message": 'ok',
+  "data": {
+  }
 }
 ```
 
