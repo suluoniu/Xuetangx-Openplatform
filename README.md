@@ -1,9 +1,8 @@
-[错误码说明](https://hk.tower.im/projects/e2dbbf907ec741e6a560695e21e551c9/docs/1b775622fa9b42fbb5b6219f9f61eee6/)
---------------------
-
-
 http接口
 --------------------
+
+**_domain_** http://api.ykt.io/
+
 > 获取二维码
 
 **_url_** /api/qrcode
@@ -150,6 +149,9 @@ http接口
 **_url_**
 websocket接口
 --------------------
+
+**_domain_** http://ws.ykt.io/
+
 > 出二维码
 
 **_message_**
