@@ -131,22 +131,128 @@ http接口
 **_body_**
 ```javascript
 {
+  "name": "测试试验",
+  "target": "实现xxx",
+  "requirements": "abc",
+  "deadline": "140233403404",
+  "
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0, 
+  "message": 'ok'
 }
 ```
 > 发布实验
 
 **_url_** /experiment/publish
+
+**_method_** POST
+
+**_header_**
+```javascript
+{
+  "X-Rain-AppKey": {appKey},
+  "X-Rain-Signature": {signature},
+  "X-Rain-UserId": {userId}
+}
+```
+**_body_**
+```javascript
+{
+  "class": "1,2,3,4,10"
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0, 
+  "message": 'ok'
+}
+```
 > 上传实验行为数据
 
 **_url_** /experiment/uploadAction
+
+**_method_** POST
+
+**_header_**
+```javascript
+{
+  "X-Rain-AppKey": {appKey},
+  "X-Rain-Signature": {signature},
+  "X-Rain-UserId": {userId}
+}
+```
+**_body_**
+```javascript
+{
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0, 
+  "message": 'ok'
+}
+```
 
 > 上传实验报告数据
 
 **_url_** /experiment/uploadData
 
+**_method_** POST
+
+**_header_**
+```javascript
+{
+  "X-Rain-AppKey": {appKey},
+  "X-Rain-Signature": {signature},
+  "X-Rain-UserId": {userId}
+}
+```
+**_body_**
+```javascript
+{
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0, 
+  "message": 'ok'
+}
+```
+
 > 获取老师、班级、学生、实验的对应关系
 
 **_url_**
+
+**_method_** POST
+
+**_header_**
+```javascript
+{
+  "X-Rain-AppKey": {appKey},
+  "X-Rain-Signature": {signature},
+  "X-Rain-UserId": {userId}
+}
+```
+**_body_**
+```javascript
+{
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0, 
+  "message": 'ok'
+}
+```
+
 websocket接口
 --------------------
 
