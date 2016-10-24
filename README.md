@@ -7,7 +7,9 @@ http接口
 > 获取二维码
 
 **_url_** /api/qrcode
+
 **_method_** GET
+
 **_header_** 
 ```javascript
 {
@@ -31,7 +33,9 @@ http接口
 > (非第三方)登录信息回传（针对Django）
 
 **_url_** /api/qrcode
+
 **_method_** POST
+
 **_body_**
 ```javascript
 {
@@ -68,7 +72,9 @@ http接口
 > 查询登录者信息
 
 **_url_** /api/userinfo
+
 **_method_** GET
+
 **_header_** 
 ```javascript
 {
@@ -112,7 +118,9 @@ http接口
 > 新建实验
 
 **_url_** /api/new
+
 **_method_** POST
+
 **_header_**
 ```javascript
 {
