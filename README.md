@@ -5,7 +5,7 @@ http接口
 
 > 获取二维码
 
-**_url_** /api/qrcode
+**_url_** /qrcode/get
 
 **_method_** GET
 
@@ -31,7 +31,7 @@ http接口
 ```
 > (非第三方)登录信息回传（针对Django）
 
-**_url_** /api/qrcode
+**_url_** /qrcode/scan
 
 **_method_** POST
 
@@ -70,7 +70,7 @@ http接口
 
 > 查询登录者信息
 
-**_url_** /api/userinfo
+**_url_** /user/info
 
 **_method_** GET
 
@@ -116,7 +116,7 @@ http接口
 
 > 新建实验
 
-**_url_** /api/new
+**_url_** /experiment/create
 
 **_method_** POST
 
@@ -135,14 +135,14 @@ http接口
 ```
 > 发布实验
 
-**_url_**
+**_url_** /experiment/publish
 > 上传实验行为数据
 
-**_url_**
+**_url_** /experiment/uploadAction
 
 > 上传实验报告数据
 
-**_url_**
+**_url_** /experiment/uploadData
 
 > 获取老师、班级、学生、实验的对应关系
 
