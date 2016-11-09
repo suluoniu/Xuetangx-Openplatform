@@ -488,21 +488,3 @@ websocket接口
   "Stable": {"DownloadURL": "http://rain.xuetangx.com/", "ChangeLog": "\u6295\u7968\u6700\u591a\u53ef\u9009\u9879\u6570\u76ee\u4e0d\u4e00\u81f4\u4fee\u6539", "Version": "1.0.0.39", "LaunchDate": "2016-05-10T09:52:10"}
 }
 ```
-> 心跳
-
-**_message_**
-```javascript
-{
-  "op": "heartbeat",
-  "msgid": 1
-}
-```
-**_response_**
-```javascript
-{
-  "op": "heartbeat",
-  "status": 0,
-  "message": "success",
-  "msgid": 1
-}
-```
