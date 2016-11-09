@@ -468,33 +468,24 @@ websocket接口
   "status": 0,
   "message": "success",
   "login_id": 222,
-  "user_id": "int型用户id如123",
-  "name": "用户名字",
-  "nickname": "微信昵称",
-  "avatar": "http://wx.qlogo.cn/mmopen/tnGT4YBoSbbUZmECibSLnDu2z5r2bpbDtH7zAiadRETvU8bQlTR8ObiapVUlaejbOiafmOkM8my6Q5NZ3dC3ACHIxIGKL27fxYG0/0",						//微信头像的url地址
-  "weixin_union_id": "微信的unionid,owHdquIH-AdQD7UMPohiIaQGjfA8",
-  "app_open_id": "用户针对此公众号的appid默认为none,oM_HWwYUcgHV9ewbAt76kWSeoL3g",
-  "school": "所在院校",
-  "department": "所在院系",
-  "role": "身份,默认为0:0未填写1在校学生2老师3其他人员",
-  "position": "职别信息，默认为空",
-  "year_of_birth": "出生年份,datetime格式日期",
-  "gender": "性别,默认为0:0未填写1男2女",
-  "last_login_ip": "上次登录ip,如127.0.0.1",
-  "date_joined": "帐号注册时间datetime时间,%Y-%m-%dT%H:%M:%S格式",
-  "last_login": "上次登录时间datetime时间,%Y-%m-%dT%H:%M:%S格式",
-  "auth": "uuid的加密,str类型",
-  "beta": {
-   	  "download_url": "http://b.xuetangx.com", 
-      "change_log": "beta1.0.0.25\u7248", 
-      "version": "1.0.0.25", 
-      "launch_date": "2016-03-31T16:15:41"
-  },
-  "stable": {
-      "download_url": "http://rain.xuetangx.com/", 
-      "change_log": "\u6295\u7968\u6700\u591a\u53ef\u9009\u9879\u6570\u76ee\u4e0d\u4e00\u81f4\u4fee\u6539",  	   "version": "1.0.0.39", 
-      "launch_date": "2016-05-10T09:52:10"
-  }
+  "UserID": "int型用户id如123",
+  "Name": "用户名字",
+  "Nickname": "微信昵称",
+  "Avatar": "微信头像的url地址,http://wx.qlogo.cn/mmopen/tnGT4YBoSbbUZmECibSLnDu2z5r2bpbDtH7zAiadRETvU8bQlTR8ObiapVUlaejbOiafmOkM8my6Q5NZ3dC3ACHIxIGKL27fxYG0/0",
+  "WeixinUnionID": "微信的unionid,owHdquIH-AdQD7UMPohiIaQGjfA8",
+  "AppOpenID": "用户针对此公众号的appid默认为none,oM_HWwYUcgHV9ewbAt76kWSeoL3g",
+  "School": "所在院校",
+  "Department": "所在院系",
+  "Role": "身份,默认为0:0未填写1在校学生2老师3其他人员",
+  "Position": "职别信息，默认为空",
+  "YearOfBirth": "出生年份,datetime格式日期",
+  "Gender": "性别,默认为0:0未填写1男2女",
+  "LastLoginIP": "上次登录ip,如127.0.0.1",
+  "DateJoined": "帐号注册时间datetime时间,%Y-%m-%dT%H:%M:%S格式",
+  "LastLogin": "上次登录时间datetime时间,%Y-%m-%dT%H:%M:%S格式",
+  "Auth": "uuid的加密,str类型",
+  "Beta": {"DownloadURL": "http://b.xuetangx.com", "ChangeLog": "beta1.0.0.25\u7248", "Version": "1.0.0.25", "LaunchDate": "2016-03-31T16:15:41"},
+  "Stable": {"DownloadURL": "http://rain.xuetangx.com/", "ChangeLog": "\u6295\u7968\u6700\u591a\u53ef\u9009\u9879\u6570\u76ee\u4e0d\u4e00\u81f4\u4fee\u6539", "Version": "1.0.0.39", "LaunchDate": "2016-05-10T09:52:10"}
 }
 ```
 > 心跳
