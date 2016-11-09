@@ -214,24 +214,27 @@ http接口
 	"uid": {uid},
 	"finished": 1,					//0:暂存，1:完成实验(即提交)  
 	"experiment_id": 1,
-	"partners": "李磊，韩梅梅",
-	"theory": "分布式的部分可使肌肤看电视不发顺丰不数据库的",
-	"simulation": [{
+	"partners": "李磊，韩梅梅",	//实验成员
+	"theory": "分布式的部分可使肌肤看电视不发顺丰不数据库的",	//原理分析
+	"simulation": [{	//仿真实验
+		"type": "image",	//图片
+		"img_url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
+	}, {
+		"type": "text",		//文字
+		"text": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
+	}],
+	"processes": [{		//实验过程记录
 		"type": "image",
 		"img_url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
 	}, {
 		"type": "text",
 		"text": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
 	}],
-	"processes": [{
-		"type": "image",
-		"img_url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
-	}, {
-		"type": "text",
-		"text": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
-	}],
+	//实验结论分析
 	"analysis": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不不数据库的",
+	//反思与收获
 	"achievement": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发据库的",
+	//波形数据
     "wave_datas": [{
 		"X_Unit": "s",
 		"Y_Unit": "V",
@@ -360,7 +363,7 @@ http接口
   "message": 'ok',
   "data": {
       "url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg",
-      "time": "140233403404"  
+      "time": 1402334034 
   }
 }
 ```
