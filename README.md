@@ -445,13 +445,13 @@ websocket接口
 **_message_**
 ```javascript
 {
-  "op": "requestlogin"
+  "op": "login"
 }
 ```
 **_response_**
 ```javascript
 {
-  "op": "requestlogin",
+  "op": "login",
   "status": 0,
   "message": "success",
   "loginid": 222,
