@@ -390,42 +390,57 @@ http接口
     "status": 0,
     "message": "ok",
     "data": {
-        "uid": "9",
-        "role": "teacher or student",
-	"relations": [{
-        "classes": [{
-            "id": 1,
-            "name": "classes1",
-            "experiments": [{
-              	"id": 1,
-              	"name": "experiments1",
-              	"create_time": "140233403404"
-            },{
-              	"id": 2,
-              	"name": "experiments2",
-                "create_time": "140233403404"
-            }],
-            "teacher": {			//学生角色返回
-              "id": 1,
-              "name": "teacher"
-            },
-            "assistants": [{                  //助教
-                "id": 2,
-                "name": "assistant2"
-            },{
-                "id": 3,
-                "name": "assistant3"
-            }],
-            "students":[{			//老师角色返回
-              	"id": 1,
-              	"name": "student1"
-            },{
-              	"id": 2,
-              	"name": "student2"
-            }]
-        }]
-	  }]
-    } 
+		"courses": [{	//教师身份，下面的课程
+			"classrooms": [{	//该课程下面的班级
+				"students_count": 8,
+				"id": 2509,	//班级id
+				"name": "658"	//班级名
+			}],
+			"name": "吧123",	//课程名
+			"id": 217	//课程id
+		},
+		{
+			"classrooms": [{
+				"students_count": 4,
+				"id": 2407,
+				"name": "测试"
+			},
+			{
+				"students_count": 2,
+				"id": 2464,
+				"name": "1"
+			}],
+			"name": "多选投票测试",
+			"id": 159
+		}],
+		"classrooms": [{	//学生身份，所在的全部班级
+			"course": {	//班级所属课程
+				"name": "雷测试",	//课程名
+				"id": 133	//课程id
+			},
+			"students_count": 6,
+			"id": 2370,	//班级id
+			"name": "2"	//班级名
+		},
+		{
+			"course": {
+				"name": "新版测试",
+				"id": 213
+			},
+			"students_count": 5,
+			"id": 2500,
+			"name": "还把"
+		},
+		{
+			"course": {
+				"name": "123新的测试课程",
+				"id": 191
+			},
+			"students_count": 2,
+			"id": 2469,
+			"name": "测试日志合并"
+		}]
+	} 
 }
 ```
 > 推送微信
