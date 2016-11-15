@@ -398,14 +398,12 @@ http接口
 			}],
 			"name": "吧123",	//课程名
 			"id": 217	//课程id
-		},
-		{
+		}, {
 			"classrooms": [{
 				"students_count": 4,
 				"id": 2407,
 				"name": "测试"
-			},
-			{
+			}, {
 				"students_count": 2,
 				"id": 2464,
 				"name": "1"
@@ -421,8 +419,7 @@ http接口
 			"students_count": 6,
 			"id": 2370,	//班级id
 			"name": "2"	//班级名
-		},
-		{
+		}, {
 			"course": {
 				"name": "新版测试",
 				"id": 213
@@ -430,8 +427,7 @@ http接口
 			"students_count": 5,
 			"id": 2500,
 			"name": "还把"
-		},
-		{
+		}, {
 			"course": {
 				"name": "123新的测试课程",
 				"id": 191
