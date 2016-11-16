@@ -1,7 +1,7 @@
 http接口
 --------------------
 
-**_domain_** http://api.ykt.io/
+**_domain_** http://b.xuetangx.com/
 
 > 新建实验
 
