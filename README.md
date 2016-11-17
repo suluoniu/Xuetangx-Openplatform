@@ -15,6 +15,7 @@ http接口
   "appkey": {appkey},
   "signature": {signature},
   "uid": {uid}, //老师id，int
+  "uname": "老师名字",
   "name": "实验名称",
   "target": "实验目标",
   "requirements": "实验要求",
