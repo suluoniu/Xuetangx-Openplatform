@@ -28,7 +28,7 @@ http接口
   "status": 0, 
   "message": 'ok',
   "data": {
-    "experiment_id": 1  //实验id，int
+    "experiment_id": "582d79f909d8fd4cc56fe7c7"  //实验id，str
   }
 }
 ```
