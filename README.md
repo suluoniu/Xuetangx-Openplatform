@@ -56,9 +56,9 @@ http接口
   "message": 'ok'
 }
 ```
-> 删除发布实验
+> 取消发布实验
 
-**_url_** /experiment/delete
+**_url_** /experiment/cancal
 
 **_method_** POST
 
