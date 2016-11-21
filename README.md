@@ -427,7 +427,15 @@ http接口
 			},
 			"students_count": 5,
 			"id": 2500,
-			"name": "还把"
+			"name": "还把",
+			"experiments": [	//实验数据，可选
+				{
+					"experiment_id": "582d79f909d8fd4cc56fe7c7",
+					"name": "测试实验",
+					"deadline": 1479955316,
+					"publish_time": 1479720278
+				}
+			]
 		}, {
 			"course": {
 				"name": "123新的测试课程",
