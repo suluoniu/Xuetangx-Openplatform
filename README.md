@@ -58,7 +58,7 @@ http接口
 ```
 > 取消发布实验
 
-**_url_** /experiment/cancal
+**_url_** /experiment/cancel
 
 **_method_** POST
 
