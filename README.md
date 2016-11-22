@@ -215,6 +215,7 @@ http接口
 	"appKey": {appKey},
 	"signature": {signature},
 	"uid": {uid},
+	"uname": "李磊",
 	"finished": 1,					//0:暂存，1:完成实验(即提交)  
 	"experiment_id": 1,
 	"partners": "李磊，韩梅梅",	//实验成员
