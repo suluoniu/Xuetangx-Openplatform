@@ -134,6 +134,7 @@ http接口
     "appkey": {appkey},
     "signature": {signature},
     "uid": 9,
+    "uname": "xxx",
     "experiment_id": 1,  
     "action_logs": [{
       "action_time": 1402334034,		//时间戳
