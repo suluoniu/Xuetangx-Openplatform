@@ -221,17 +221,17 @@ http接口
 	"theory": "分布式的部分可使肌肤看电视不发顺丰不数据库的",	//原理分析
 	"simulation": [{	//仿真实验
 		"type": "image",	//图片
-		"img_url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
+		"content": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
 	}, {
 		"type": "text",		//文字
-		"text": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
+		"content": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
 	}],
 	"processes": [{		//实验过程记录
 		"type": "image",
-		"img_url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
+		"content": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
 	}, {
 		"type": "text",
-		"text": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
+		"content": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
 	}],
 	//实验结论分析
 	"analysis": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不不数据库的",
@@ -276,17 +276,17 @@ http接口
     "theory":"分布式的部分可使肌肤看电视不发顺丰不数据库的",
     "simulation": [{
       "type": "image",
-      "img_url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
+      "content": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
     },{
       "type": "text",
-      "text": "分布式的部分可使肌肤看电视不发顺丰不数据库的" 
+      "content": "分布式的部分可使肌肤看电视不发顺丰不数据库的" 
     }],
     "processes":[{
       "type": "image",
-      "img_url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
+      "content": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
     },{
       "type": "text",
-      "text": "分布式的部分可使肌肤看电视不发顺丰不数据库的" 
+      "content": "分布式的部分可使肌肤看电视不发顺丰不数据库的" 
     }],
      "analysis": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不不数据库的",
      "achievement": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发据库的"
