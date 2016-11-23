@@ -309,7 +309,6 @@ http接口
 {
     "appKey": { appKey },
     "signature": { signature },
-    "uid": { uid },
     "experiment_id": 1,
     "name": "李磊"
 }
