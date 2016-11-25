@@ -183,7 +183,7 @@ http接口
   "appKey": {appKey},
   "signature": {signature},
   "uid": 9,
-  "experiment_id": 1
+  "experiment_id": {experiment_id}
 }
 ```
 **_response_**
