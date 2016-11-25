@@ -19,7 +19,7 @@ http接口
   "name": "实验名称",
   "target": "实验目标",
   "requirements": "实验要求",
-  "custom": [	//自定义项
+  "custom": [	//自定义项，可选
   	{
 		"name": "实验xxx",
 		"content": "xxxxxxx"
@@ -124,7 +124,11 @@ http接口
       "name": "class2",
       "finished_num": 20, 	//已完成人数
       "total_num": 50, 		//总人数
-    }]
+    }],
+	"custom": [{
+		"name": "实验注意事项",
+		"content": "xxxxx"
+	}]
   }
 }
 ```
