@@ -354,7 +354,8 @@ http接口
 {
   "appKey": {appKey},
   "signature": {signature},
-  "uid": {uid}
+  "uid": {uid},
+  "file": {$file}
 }
 ```
 **_response_**
