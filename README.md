@@ -19,6 +19,12 @@ http接口
   "name": "实验名称",
   "target": "实验目标",
   "requirements": "实验要求",
+  "custom": [	//自定义项
+  	{
+		"name": "实验xxx",
+		"content": "xxxxxxx"
+	}
+  ],
   "deadline": 1402334034,	//截止时间戳(精确到秒) 
 }
 ```
