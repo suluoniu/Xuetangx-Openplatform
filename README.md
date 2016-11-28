@@ -227,7 +227,7 @@ http接口
 	"uid": {uid},
 	"uname": "李磊",
 	"finished": 1,					//0:暂存，1:完成实验(即提交)  
-	"experiment_id": 1,
+	"experiment_id": "xxxxxx",
 	"partners": "李磊，韩梅梅",	//实验成员
 	"theory": "分布式的部分可使肌肤看电视不发顺丰不数据库的",	//原理分析
 	"simulation": [{	//仿真实验
@@ -281,9 +281,11 @@ http接口
   "data": {
     "uid": 1,
     "uname": "李磊",
-    "experiment_id": 1,
+    "experiment_id": "xxxxx",
     "finished": 1,					//0:未完成， 1：已完成(不可再编辑)
     "partners":"李磊，韩梅梅",
+    "finish_time": 1479806204,
+    "created_time": 1479806204,
     "score": -1,					//-1: 未批改，0及以上为已批改的得分  
     "theory":"分布式的部分可使肌肤看电视不发顺丰不数据库的",
     "simulation": [{
@@ -302,7 +304,6 @@ http接口
     }],
      "analysis": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不不数据库的",
      "achievement": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使",
-     "score": -1,	//-1表示未批改
      "finished": 1
   }  
 }
