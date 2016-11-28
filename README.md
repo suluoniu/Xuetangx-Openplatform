@@ -284,8 +284,8 @@ http接口
     "experiment_id": "xxxxx",
     "finished": 1,					//0:未完成， 1：已完成(不可再编辑)
     "partners":"李磊，韩梅梅",
-    "finish_time": 1479806204,
-    "created_time": 1479806204,
+    "finish_time": 1479806204,				//报告完成时间
+    "created_time": 1479806204,				//首次提交报告时间
     "score": -1,					//-1: 未批改，0及以上为已批改的得分  
     "theory":"分布式的部分可使肌肤看电视不发顺丰不数据库的",
     "simulation": [{
