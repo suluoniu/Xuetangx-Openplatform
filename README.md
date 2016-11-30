@@ -12,10 +12,7 @@ http接口
 **_body_**
 ```javascript
 {
-  "appkey": {appkey},
-  "signature": {signature},
-  "uid": {uid}, //老师id，int
-  "uname": "老师名字",
+  "access_token": {access_token},
   "name": "实验名称",
   "target": "实验目标",
   "requirements": "实验要求",
@@ -48,9 +45,7 @@ http接口
 **_body_**
 ```javascript
 {
-  "appkey": {appkey},
-  "signature": {signature},
-  "uid": {uid},
+  "access_token": {access_token},
   "experiment_id": {experiment_id},
   "class": [1,2,3,4,10] //班级id
 }
@@ -71,9 +66,7 @@ http接口
 **_body_**
 ```javascript
 {
-  "appkey": {appkey},
-  "signature": {signature},
-  "uid": {uid},
+  "access_token": {access_token},
   "experiment_id": {experiment_id}
 }
 ```
@@ -94,9 +87,7 @@ http接口
 **_query_**
 ```javascript
 {
-  "appkey": {appkey},
-  "signature": {signature},
-  "uid": {uid},
+  "access_token": {access_token},
   "experiment_id": {experiment_id}
 }
 ```
@@ -141,10 +132,7 @@ http接口
 **_body_**
 ```javascript
 {
-    "appkey": {appkey},
-    "signature": {signature},
-    "uid": 9,
-    "uname": "xxx",
+    "access_token": {access_token},
     "experiment_id": 1,  
     "action_logs": [{
       "action_time": 1402334034,		//时间戳
@@ -180,9 +168,7 @@ http接口
 **_query_**
 ```javascript
 {
-  "appKey": {appKey},
-  "signature": {signature},
-  "uid": 9,
+  "access_token": {access_token},
   "experiment_id": {experiment_id}
 }
 ```
@@ -222,10 +208,7 @@ http接口
 **_body_**
 ```javascript
 {
-	"appKey": {appKey},
-	"signature": {signature},
-	"uid": {uid},
-	"uname": "李磊",
+	"access_token": {access_token},
 	"finished": 1,					//0:暂存，1:完成实验(即提交)  
 	"experiment_id": "xxxxxx",
 	"partners": "李磊，韩梅梅",	//实验成员
@@ -267,9 +250,7 @@ http接口
 **_query_**
 ```javascript
 {
-    "appKey": { appKey },
-    "signature": { signature },
-    "uid": { uid },
+    "access_token": {access_token},
     "experiment_id": 1
 }
 ```
@@ -309,38 +290,6 @@ http接口
 }
 ```
 
-> 搜索学生实验报告
-
-**_url_** /experiment/search
-
-**_method_** GET
-
-**_query_**
-```javascript
-{
-    "appKey": { appKey },
-    "signature": { signature },
-    "experiment_id": 1,
-    "name": "李磊"
-}
-```
-**_response_**
-```javascript
-{
-  "status": 0, 
-  "message": 'ok',
-  "data": [{
-    "uid":1,
-    "name": "lilei",
-    "finished_time": "140233403404"
-  },{
-    "uid":2,
-    "name": "lilei2",
-    "finished_time": "140233403404"
-  }]
-}
-```
-
 > 上传图片
 
 **_url_** /upload
@@ -353,9 +302,7 @@ http接口
 
 ```javascript
 {
-  "appKey": {appKey},
-  "signature": {signature},
-  "uid": {uid},
+  "access_token": {access_token},
   "file": {$file}
 }
 ```
@@ -381,9 +328,7 @@ http接口
 **_query_**
 ```javascript
 {
-  "appKey": {appKey},
-  "signature": {signature},
-  "uid": "用户id"
+  "access_token": {access_token}
 }
 ```
 **_response_**
