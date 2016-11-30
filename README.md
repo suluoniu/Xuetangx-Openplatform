@@ -411,7 +411,8 @@ websocket接口
 **_message_**
 ```javascript
 {
-  "op": "login"
+  "op": "login",
+  "appkey": {$appkey}
 }
 ```
 **_response_**
