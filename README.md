@@ -15,14 +15,14 @@ http接口
   "access_token": {access_token},
   "name": "实验名称",
   "target": "实验目标",
-  "requirements": "实验要求",
   "custom": [	//自定义项，可选
   	{
-		"name": "实验xxx",
+		"name": "实验要求",
 		"content": "xxxxxxx"
 	}
-  ],
-  "deadline": 1402334034,	//截止时间戳(精确到秒) 
+  ],
+  "most_members": 0,	//0为不限制
+  "deadline": 1402334034,	//截止时间戳(精确到秒) 
 }
 ```
 **_response_**
@@ -57,9 +57,9 @@ http接口
   "message": 'ok'
 }
 ```
-> 取消发布实验
+> 删除实验
 
-**_url_** /experiment/cancel
+**_url_** /experiment/delete
 
 **_method_** POST
 
@@ -134,22 +134,7 @@ http接口
 {
     "access_token": {access_token},
     "experiment_id": 1,  
-    "action_logs": [{
-      "action_time": 1402334034,		//时间戳
-      "action_describe": "开始实验"
-    }, {
-      "action_time": 1402334034,
-      "action_describe": "操作电路板"
-    }, {
-      "action_time": 1402334034,
-      "action_describe": "调整电路板"
-    },{
-      "action_time": 1402334034,
-      "action_describe": "提交实验数据"
-    },{
-      "action_time": 1402334034,
-      "action_describe": "结束实验"
-    }]
+    "action_logs": "开始实验"
 }
 ```
 **_response_**
@@ -211,26 +196,14 @@ http接口
 	"access_token": {access_token},
 	"finished": 1,					//0:暂存，1:完成实验(即提交)  
 	"experiment_id": "xxxxxx",
-	"partners": "李磊，韩梅梅",	//实验成员
-	"theory": "分布式的部分可使肌肤看电视不发顺丰不数据库的",	//原理分析
-	"simulation": [{	//仿真实验
-		"type": "image",	//图片
-		"content": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
-	}, {
-		"type": "text",		//文字
-		"content": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
-	}],
+	"partners": [1,2,12,56],	//实验成员
 	"processes": [{		//实验过程记录
 		"type": "image",
 		"content": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
 	}, {
 		"type": "text",
 		"content": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
-	}],
-	//实验结论分析
-	"analysis": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不不数据库的",
-	//反思与收获
-	"achievement": "分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发顺丰不数据库的分布式的部分可使肌肤看电视不发据库的" 
+	}]
 }
 ```
 **_response_**
