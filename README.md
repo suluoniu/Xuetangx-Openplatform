@@ -134,7 +134,7 @@ http接口
 {
     "access_token": {access_token},
     "experiment_id": 1,  
-    "action_logs": "开始实验"
+    "action": "开始实验"
 }
 ```
 **_response_**
@@ -160,27 +160,24 @@ http接口
 **_response_**
 ```javascript
 {
-  "status": 0, 
-  "message": 'ok',
-  "data": {
-    "experiment_id": 1,  
-    "action_logs": [{
-      "action_time": "140233403404",		//时间戳
-      "action_describe": "开始实验"
-    }, {
-      "action_time": "140233403404",
-      "action_describe": "操作电路板"
-    }, {
-      "action_time": "140233403404",
-      "action_describe": "调整电路板"
-    },{
-      "action_time":"140233403404",
-      "action_describe ":"提交实验数据"
-    },{
-      "action_time":"140233403404",
-      "action_describe":"结束实验"
-    }]
-  }  
+	"status": 0, 
+	"message": 'ok',
+	"data": [{
+		"action_time": 140233403404,		//时间戳
+		"action_describe": "开始实验"
+	}, {
+		"action_time": 140233403404,
+		"action_describe": "操作电路板"
+	}, {
+		"action_time": 140233403404,
+		"action_describe": "调整电路板"
+	},{
+		"action_time": 140233403404,
+		"action_describe ":"提交实验数据"
+	},{
+		"action_time": 140233403404,
+		"action_describe":"结束实验"
+	}]
 }
 ```
 
