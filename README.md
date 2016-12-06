@@ -195,7 +195,7 @@ http接口
 	"data": [{		//实验数据，每个{}是一个group
 		"title": "仿真实验",
 		"content": [{
-			"type": "image",	//取值：image图片，text文字，wave波形数据		
+			"type": "image",	//取值：image图片，text文字，source原始数据		
 			"value": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
 		}, {
 			"type": "text",
@@ -204,7 +204,7 @@ http接口
 	}, {
 		"title": "波形数据",
 		"content": [{
-			"type": "wave",
+			"type": "source",
 			"value": [{
 				"X_Unit": "s",
 				"Y_Unit": "V",
