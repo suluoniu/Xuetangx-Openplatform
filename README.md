@@ -3,6 +3,27 @@ http接口
 
 **_domain_** http://b.xuetangx.com/
 
+> 服务端获取Authorization Code
+
+**_url_** /user/authorize
+
+**_method_** GET
+
+**_query_**
+```javascript
+{
+  "appid": {appid},
+  "appsecret": {appsecret}
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0,
+  "code": {code}
+}
+```
+
 > 新建实验
 
 **_url_** /experiment/create
@@ -412,7 +433,7 @@ websocket接口
 ```javascript
 {
   "op": "login",
-  "appkey": {$appkey}
+  "code": {code}
 }
 ```
 **_response_**
@@ -453,6 +474,7 @@ websocket接口
   "LastLogin": "上次登录时间datetime时间,%Y-%m-%dT%H:%M:%S格式",
   "Auth": "uuid的加密,str类型",
   "Beta": {"DownloadURL": "http://b.xuetangx.com", "ChangeLog": "beta1.0.0.25\u7248", "Version": "1.0.0.25", "LaunchDate": "2016-03-31T16:15:41"},
-  "Stable": {"DownloadURL": "http://rain.xuetangx.com/", "ChangeLog": "\u6295\u7968\u6700\u591a\u53ef\u9009\u9879\u6570\u76ee\u4e0d\u4e00\u81f4\u4fee\u6539", "Version": "1.0.0.39", "LaunchDate": "2016-05-10T09:52:10"}
+  "Stable": {"DownloadURL": "http://rain.xuetangx.com/", "ChangeLog": "\u6295\u7968\u6700\u591a\u53ef\u9009\u9879\u6570\u76ee\u4e0d\u4e00\u81f4\u4fee\u6539", "Version": "1.0.0.39", "LaunchDate": "2016-05-10T09:52:10"},
+  "AccessToken": "799c8d03-95b0-4ea8-8c4f-888ff72305c2"
 }
 ```
