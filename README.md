@@ -13,7 +13,8 @@ http接口
 ```javascript
 {
   "appid": {appid},
-  "appsecret": {appsecret}
+  "appsecret": {appsecret},
+  "nonce": {nonce}	//随机数
 }
 ```
 **_response_**
@@ -490,7 +491,8 @@ websocket接口
 {
   "op": "login"
   "code": {code},
-  "appid": {appid}
+  "appid": {appid},
+  "nonce": {nonce}	//随机数
 }
 ```
 **_response_**
