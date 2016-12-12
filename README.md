@@ -482,7 +482,7 @@ http接口
 websocket接口
 --------------------
 
-**_domain_** http://ws.ykt.io/
+**_domain_** http://b.xuetangx.com/openws/
 
 > 出二维码
 
