@@ -13,7 +13,8 @@ http接口
 ```javascript
 {
   "appid": {appid},
-  "appsecret": {appsecret}
+  "appsecret": {appsecret},
+  "timestamp": 1402334034	//时间戳
 }
 ```
 **_response_**
@@ -50,6 +51,7 @@ http接口
 	}
 }
 ```
+
 > 通知扫码成功
 
 **_url_** {第三方注册的回调地址}
