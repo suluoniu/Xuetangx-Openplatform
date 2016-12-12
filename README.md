@@ -13,8 +13,7 @@ http接口
 ```javascript
 {
   "appid": {appid},
-  "appsecret": {appsecret},
-  "timestamp": 1402334034	//时间戳
+  "appsecret": {appsecret}
 }
 ```
 **_response_**
