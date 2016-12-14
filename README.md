@@ -84,9 +84,9 @@ http接口
 }
 ```
 
-> 新建实验
+> 新建任务
 
-**_url_** /experiment/create
+**_url_** /task/create
 
 **_method_** POST
 
@@ -94,8 +94,9 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "name": "实验名称",
-  "target": "实验目标",
+  "name": "任务名称",
+  "target": "任务目标",
+  "category": "experiment",		//任务类别：["experiment"]
   "custom": [	//自定义项，可选
   	{
 		"field": "实验要求",
@@ -111,14 +112,14 @@ http接口
   "status": 0, 
   "message": 'ok',
   "data": {
-    "experiment_id": "582d79f909d8fd4cc56fe7c7"  //实验id，str
+    "task_id": "582d79f909d8fd4cc56fe7c7"  //实验id，str
   }
 }
 ```
 
-> 发布实验
+> 发布任务
 
-**_url_** /experiment/publish
+**_url_** /task/publish
 
 **_method_** POST
 
@@ -126,7 +127,7 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "experiment_id": {experiment_id},
+  "task_id": {task_id},
   "class": [1,2,3,4,10] //班级id
 }
 ```
@@ -137,9 +138,9 @@ http接口
   "message": 'ok'
 }
 ```
-> 删除实验
+> 删除任务
 
-**_url_** /experiment/delete
+**_url_** /task/delete
 
 **_method_** POST
 
@@ -147,7 +148,7 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "experiment_id": {experiment_id}
+  "task_id": {task_id}
 }
 ```
 **_response_**
@@ -158,9 +159,9 @@ http接口
 }
 ```
 
-> 获取实验信息
+> 获取任务信息
 
-**_url_** /experiment/info
+**_url_** /task/info
 
 **_method_** GET
 
@@ -168,7 +169,7 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "experiment_id": {experiment_id}
+  "task_id": {task_id}
 }
 ```
 **_response_**
@@ -177,12 +178,12 @@ http接口
   "status": 0, 
   "message": 'ok',
   "data": {
-    "experiment_id": {experiment_id},
+    "task_id": {task_id},
     "published": 1,					//0:未发布，1：已发布 
     "publish_time": 1402334034,	  
   	"teacher_id": 1,
-    "name": "实验名称",
-    "target": "实验目标",
+    "name": "任务名称",
+    "target": "任务目标",
     "deadline": 1402334034,	//截止时间戳(精确到秒)		
     "classes": [{									//学生角色没有该字段，该字段老师使用
       "id": 1,
@@ -196,15 +197,15 @@ http接口
       "total_num": 50, 		//总人数
     }],
 	"custom": [{
-		"field": "实验要求",
+		"field": "任务要求",
 		"content": "xxxxx"
 	}]
   }
 }
 ```
-> 上传实验行为数据
+> 上传任务行为数据
 
-**_url_** /experiment/actions
+**_url_** /task/actions
 
 **_method_** POST
 
@@ -212,7 +213,7 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
-    "experiment_id": 1,  
+    "task_id": 1,  
     "action": "开始实验"
 }
 ```
@@ -223,9 +224,9 @@ http接口
   "message": 'ok'
 }
 ```
-> 获取实验行为数据
+> 获取任务行为数据
 
-**_url_** /experiment/actions
+**_url_** /task/actions
 
 **_method_** GET
 
@@ -233,7 +234,7 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "experiment_id": {experiment_id}
+  "task_id": {task_id}
 }
 ```
 **_response_**
@@ -260,9 +261,9 @@ http接口
 }
 ```
 
-> 上传（提交）实验报告数据
+> 上传（提交）任务报告数据
 
-**_url_** /experiment/data
+**_url_** /task/data
 
 **_method_** POST
 
@@ -271,7 +272,7 @@ http接口
 {
 	"access_token": {access_token},
 	"finished": 1,					//0:暂存，1:完成实验(即提交)  
-	"experiment_id": "xxxxxx",
+	"task_id": "xxxxxx",
 	"partners": [1,2,12,56],	//实验成员
 	"data": [{		//实验数据，每个{}是一个group
 		"title": "仿真实验",
@@ -311,9 +312,9 @@ http接口
 }
 ```
 
-> 获取实验报告数据
+> 获取任务报告数据
 
-**_url_** /experiment/data
+**_url_** /task/data
 
 **_method_** GET
 
@@ -321,7 +322,7 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
-    "experiment_id": 1
+    "task_id": 1
 }
 ```
 **_response_**
@@ -332,13 +333,13 @@ http接口
   "data": {
     "uid": 1,
     "uname": "李磊",
-    "experiment_id": "xxxxx",
+    "task_id": "xxxxx",
     "finished": 1,					//0:未完成， 1：已完成(不可再编辑)
     "partners":"李磊，韩梅梅",
     "finish_time": 1479806204,				//报告完成时间
     "created_time": 1479806204,				//首次提交报告时间
     "score": -1,					//-1: 未批改，0及以上为已批改的得分  
-    "data": [{		//实验数据，每个{}是一个group
+    "data": [{		//任务数据，每个{}是一个group
 		"title": "仿真实验",
 		"content": [{
 			"type": "image",	//取值：image图片，text文字，source原始数据		
@@ -400,9 +401,9 @@ http接口
 ```
 
 
-> 获取老师、班级、学生、实验的对应关系
+> 获取我的任务
 
-**_url_** /user/relation
+**_url_** /user/my_task/
 
 **_method_** GET
 
