@@ -410,7 +410,8 @@ http接口
 **_query_**
 ```javascript
 {
-  "access_token": {access_token}
+  "access_token": {access_token},
+  "role": "student"	//角色取值为[teacher, student]
 }
 ```
 **_response_**
@@ -418,8 +419,9 @@ http接口
 {
     "status": 0,
     "message": "ok",
+	//========教师身份========
     "data": {
-		"courses": [{	//教师身份，下面的课程
+		"courses": [{	//下面的课程
 			"classrooms": [{	//该课程下面的班级
 				"students_count": 8,
 				"id": 2509,	//班级id
@@ -440,40 +442,27 @@ http接口
 			"name": "多选投票测试",
 			"id": 159
 		}],
-		"classrooms": [{	//学生身份，所在的全部班级
-			"course": {	//班级所属课程
-				"name": "雷测试",	//课程名
-				"id": 133	//课程id
-			},
-			"students_count": 6,
-			"id": 2370,	//班级id
-			"name": "2"	//班级名
-		}, {
-			"course": {
-				"name": "新版测试",
-				"id": 213
-			},
-			"students_count": 5,
-			"id": 2500,
-			"name": "还把",
-			"experiments": [	//实验数据，可选
-				{
-					"experiment_id": "582d79f909d8fd4cc56fe7c7",
-					"name": "测试实验",
-					"deadline": 1479955316,
-					"publish_time": 1479720278
-				}
-			]
-		}, {
-			"course": {
-				"name": "123新的测试课程",
-				"id": 191
-			},
-			"students_count": 2,
-			"id": 2469,
-			"name": "测试日志合并"
+		"tasks": [{		//创建的任务		
+			"task_id": "xxxx",
+			"name": "xxxx",
+			"created_time": 1479955316,
+			"publish_time": 1479955316,
+			"deadline": 1479955316
 		}]
-	} 
+	},
+	//======学生身份======
+	"data": [{	//存在任务的班级和任务详情
+		"id": 2500,
+		"name": "还把",
+		"tasks": [	//实验数据，可选
+			{
+				"experiment_id": "582d79f909d8fd4cc56fe7c7",
+				"name": "测试实验",
+				"deadline": 1479955316,
+				"publish_time": 1479720278
+			}
+		]
+	}]
 }
 ```
 > 推送微信
