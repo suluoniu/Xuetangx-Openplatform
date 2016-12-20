@@ -213,7 +213,8 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
-    "task_id": 1,  
+    "task_id": 1,
+    "class_id": 12,
     "action": "开始实验"
 }
 ```
@@ -273,6 +274,7 @@ http接口
 	"access_token": {access_token},
 	"finished": 1,					//0:暂存，1:完成实验(即提交)  
 	"task_id": "xxxxxx",
+	"class_id": 12,
 	"partners": [1,2,12,56],	//实验成员
 	"data": [{		//实验数据，每个{}是一个group
 		"title": "仿真实验",
