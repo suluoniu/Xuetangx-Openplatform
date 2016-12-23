@@ -184,18 +184,7 @@ http接口
   	"teacher_id": 1,
     "name": "任务名称",
     "target": "任务目标",
-    "deadline": 1402334034,	//截止时间戳(精确到秒)		
-    "classes": [{									//学生角色没有该字段，该字段老师使用
-      "id": 1,
-      "name": "class1",
-      "finished_num": 20, 
-      "total_num": 50, 
-    },{
-      "id": 2,
-      "name": "class2",
-      "finished_num": 20, 	//已完成人数
-      "total_num": 50, 		//总人数
-    }],
+    "deadline": 1402334034,	//截止时间戳(精确到秒)
 	"custom": [{
 		"field": "任务要求",
 		"content": "xxxxx"
