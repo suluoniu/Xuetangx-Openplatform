@@ -307,7 +307,7 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
-    "task_id": 1
+    "task_id": "xxxx"
 }
 ```
 **_response_**
