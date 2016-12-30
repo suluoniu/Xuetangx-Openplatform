@@ -463,10 +463,12 @@ http接口
 	"status": 0, 
 	"message": 'ok',
 	"data": [{
-		"code": 0,	//0.已经上传，带有url地址；1.未上传		
+		"code": 0,	//0.已经上传，带有url地址；1.未上传
+		"media_id": "xxxx",
 		"url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
 	}, {
-		"code": 1
+		"code": 1,
+		"media_id": "xxxx"
 	}]
 }
 ```
