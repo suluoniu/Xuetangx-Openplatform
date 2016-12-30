@@ -465,11 +465,11 @@ http接口
 	"status": 0, 
 	"message": 'ok',
 	"data": [{
-		"code": 0,	//0.成功；1.未上传; 11.未扫码
+		"status": 0,	//0.成功；1.失败;
 		"media_id": "xxxx",	//可选
 		"url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg" //可选
 	}, {
-		"code": 1,
+		"status": 1,
 		"media_id": "xxxx"
 	}]
 }
