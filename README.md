@@ -462,9 +462,9 @@ http接口
 **_response_**
 ```javascript
 {
-	"status": 0, 
+	"status": 0, 	//当event是SCAN时判断此字段即可
 	"message": 'ok',
-	"data": [{
+	"data": [{	//当event是MEDIA时
 		"status": 0,	//0.成功；1.失败;
 		"media_id": "xxxx",	//可选
 		"url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg" //可选
