@@ -445,9 +445,9 @@ http接口
 }
 ```
 
-> 拍照轮询接口
+> 微信相关轮询接口
 
-**_url_** /wechat/confirm_uploaded
+**_url_** /wechat/confirm
 
 **_method_** GET
 
@@ -455,7 +455,9 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "media_id": "xxx"	//如果拍了多张照片可以用,分割
+  "event": "SCAN/MEDIA",
+  "event_type": "IMAGE",
+  "media_id": "xxx"	//可选，如果拍了多张照片可以用,分割
 ```
 **_response_**
 ```javascript
@@ -463,9 +465,9 @@ http接口
 	"status": 0, 
 	"message": 'ok',
 	"data": [{
-		"code": 0,	//0.已经上传，带有url地址；1.未上传
-		"media_id": "xxxx",
-		"url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
+		"code": 0,	//0.成功；1.未上传; 11.未扫码
+		"media_id": "xxxx",	//可选
+		"url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg" //可选
 	}, {
 		"code": 1,
 		"media_id": "xxxx"
