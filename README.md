@@ -425,6 +425,7 @@ http接口
 			"task_id": "xxxx",
 			"name": "xxxx",
 			"created_time": 1479955316,
+			"classes": [2509],
 			"publish_time": 1479955316,
 			"deadline": 1479955316
 		}]
