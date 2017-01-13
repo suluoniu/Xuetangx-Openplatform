@@ -363,8 +363,7 @@ http接口
 }
 ```
 
-> 获取任务报告数据
-
+> 获取同班同学
 **_url_** /task/get_classmates
 
 **_method_** GET
