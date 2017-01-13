@@ -363,6 +363,36 @@ http接口
 }
 ```
 
+> 获取任务报告数据
+
+**_url_** /task/get_classmates
+
+**_method_** GET
+
+**_query_**
+```javascript
+{
+    "access_token": {access_token},
+    "class_id": 123
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0, 
+  "message": 'ok',
+  "data": [{
+        "user_id"：3，
+        "name":"ABCDED",
+        "avatar_96": "asdgasdfasdf.jpg" 
+  },{
+        "user_id"：97，
+        "name":"ABCDED",
+        "avatar_96": "asdgasdfasdf.jpg"
+  }]
+}
+```
+
 > 上传图片
 
 **_url_** /upload
