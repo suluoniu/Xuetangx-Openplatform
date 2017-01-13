@@ -264,7 +264,13 @@ http接口
 	"finished": 1,					//0:暂存，1:完成实验(即提交)  
 	"task_id": "xxxxxx",
 	"class_id": 12,
-	"partners": [1,2,12,56],	//实验成员
+	"partners": [{	//实验成员
+		"id": 1,
+		"name": "abc"
+	}, {
+		"id": 23,
+		"name": "cba"
+	}],
 	"data": [{		//实验数据，每个{}是一个group
 		"title": "仿真实验",
 		"content": [{
@@ -320,7 +326,13 @@ http接口
     "uname": "李磊",
     "task_id": "xxxxx",
     "finished": 1,					//0:未完成， 1：已完成(不可再编辑)
-    "partners":"李磊，韩梅梅",
+    "partners": [{
+		"id": 1,
+		"name": "李磊"
+	}，{
+		"id": 2,
+		"name": "韩梅梅"
+	}],
     "finish_time": 1479806204,				//报告完成时间
     "created_time": 1479806204,				//首次提交报告时间
     "score": -1,					//-1: 未批改，0及以上为已批改的得分  
