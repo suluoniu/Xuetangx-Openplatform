@@ -384,11 +384,11 @@ http接口
   "data": [{
         "user_id"：3，
         "name":"ABCDED",
-        "avatar_96": "asdgasdfasdf.jpg" 
+        "avatar": "asdgasdfasdf.jpg" 
   },{
         "user_id"：97，
         "name":"ABCDED",
-        "avatar_96": "asdgasdfasdf.jpg"
+        "avatar": "asdgasdfasdf.jpg"
   }]
 }
 ```
