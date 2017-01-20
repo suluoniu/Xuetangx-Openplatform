@@ -380,15 +380,22 @@ http接口
 {
   "status": 0, 
   "message": 'ok',
-  "data": [{
-        "user_id"：3，
-        "name":"ABCDED",
-        "avatar": "asdgasdfasdf.jpg" 
-  },{
-        "user_id"：97，
-        "name":"ABCDED",
-        "avatar": "asdgasdfasdf.jpg"
-  }]
+  "data": {
+		"available": [{
+			"user_id"：3，
+			"name":"ABCDED",
+			"avatar": "asdgasdfasdf.jpg" 
+		},{
+			"user_id"：97，
+			"name":"ABCDED",
+			"avatar": "asdgasdfasdf.jpg"
+		}],
+		partners: [{
+			"user_id"：27，
+			"name":"ABCDED",
+			"avatar": "asdgasdfasdf.jpg"
+		}]
+	}
 }
 ```
 
