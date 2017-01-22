@@ -418,6 +418,7 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
+  "task_id": {$task_id},
   "file": {$file}
 }
 ```
@@ -427,6 +428,9 @@ http接口
   "status": 0, 
   "message": 'ok',
   "data": {
+  	  "id": "58847e9c2444b91a49845494",
+      "mimetype": "image/jpeg",
+      "size": 12212,
       "url": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg",
       "time": 1402334034 
   }
