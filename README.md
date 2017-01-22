@@ -103,6 +103,12 @@ http接口
 		"content": "xxxxxxx"
 	}
   ],
+  "attachment": [	//附件，可选
+  	{
+		"id": "xxxx",
+		"url": "http://xxxx"
+  	}
+  ],
   "deadline": 1402334034,	//截止时间戳(精确到秒) 
 }
 ```
