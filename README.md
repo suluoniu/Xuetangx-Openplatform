@@ -378,6 +378,7 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
+    "task_id": {task_id},
     "class_id": 123
 }
 ```
