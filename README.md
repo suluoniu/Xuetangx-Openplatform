@@ -194,7 +194,13 @@ http接口
 	"custom": [{
 		"field": "任务要求",
 		"content": "xxxxx"
-	}]
+	}],
+	"attachment": [  //附件，可选
+		{
+			"id": "xxxx",
+			"url": "http://xxxx"
+		}
+	]
   }
 }
 ```
