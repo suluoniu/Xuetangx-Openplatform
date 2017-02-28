@@ -84,6 +84,28 @@ http接口
 }
 ```
 
+> 时间校对
+
+**_url_** /timestamp
+
+**_method_** GET
+
+**_query_**
+```javascript
+{
+}
+```
+**_response_**
+```javascript
+{
+	"status": 0, 
+    "message": 'ok',
+    "data": {
+		"timestamp": 1402334034
+	}
+}
+```
+
 > 新建任务
 
 **_url_** /task/create
