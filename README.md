@@ -106,6 +106,7 @@ http接口
   "attachment": [	//附件，可选
   	{
 		"id": "xxxx",
+		"mimetype": "image/jpeg",
 		"url": "http://xxxx"
   	}
   ],
@@ -198,6 +199,7 @@ http接口
 	"attachment": [  //附件，可选
 		{
 			"id": "xxxx",
+			"mimetype": "image/jpeg",
 			"url": "http://xxxx"
 		}
 	]
