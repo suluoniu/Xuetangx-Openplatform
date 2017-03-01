@@ -436,6 +436,39 @@ http接口
 }
 ```
 
+> 查看任务完成情况
+
+**_url_** /achieve
+
+**_method_** POST
+
+**_body_**
+
+```javascript
+{
+  "access_token": {access_token},
+  "task_id": {$task_id},
+  "class_id": {$class_id}
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0, 
+  "message": 'ok',
+  "data": {
+  	  "finished": [{
+		  "uid": 1111,
+		  "finish_time": 1402334034
+	  }],
+	  "unfinished": [{
+		  "uid": 1112,
+		  "created_time": 1402334034
+	  }]
+  }
+}
+```
+
 > 上传图片
 
 **_url_** /upload
