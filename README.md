@@ -456,17 +456,25 @@ http接口
 **_response_**
 ```javascript
 {
-  "status": 0, 
-  "message": 'ok',
+  "status": 0,
   "data": {
-  	  "finished": [{
-		  "uid": 1111,
-		  "finish_time": 1402334034
-	  }],
-	  "unfinished": [{
-		  "uid": 1112,
-		  "created_time": 1402334034
-	  }]
+    "finished": [{
+      "uid": 332,
+      "name": "huangsuoyuan",
+      "avatar": "http://wx.qlogo.cn/mmopen/tnGT4YBoSbYzZWtK6Vxia7kricg3lCX5wBiatXNENEaQLgL5987viceCsiaXzSTQ4m4QceKOthibUMUlacIT3KkaTx9cFiaJ38eOQRD/0",
+      "finish_time": 1487907798
+    }],
+    "unfinished": [{
+      "uid": 332,
+      "name": "huangsuoyuan",
+      "avatar": "http://wx.qlogo.cn/mmopen/tnGT4YBoSbYzZWtK6Vxia7kricg3lCX5wBiatXNENEaQLgL5987viceCsiaXzSTQ4m4QceKOthibUMUlacIT3KkaTx9cFiaJ38eOQRD/0",
+      "created_time": 1487907798
+    }],
+    "unstarted": [{
+      "uid": 332,
+      "name": "huangsuoyuan",
+      "avatar": "http://wx.qlogo.cn/mmopen/tnGT4YBoSbYzZWtK6Vxia7kricg3lCX5wBiatXNENEaQLgL5987viceCsiaXzSTQ4m4QceKOthibUMUlacIT3KkaTx9cFiaJ38eOQRD/0"
+    }]
   }
 }
 ```
