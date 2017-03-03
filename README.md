@@ -440,7 +440,7 @@ http接口
 
 > 查看任务完成情况
 
-**_url_** /achieve
+**_url_** /task/achieve
 
 **_method_** POST
 
