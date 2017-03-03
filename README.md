@@ -442,9 +442,9 @@ http接口
 
 **_url_** /task/achieve
 
-**_method_** POST
+**_method_** GET
 
-**_body_**
+**_query_**
 
 ```javascript
 {
