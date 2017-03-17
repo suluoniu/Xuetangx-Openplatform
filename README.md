@@ -648,7 +648,7 @@ websocket接口
   "op": "loginsuccess",
   "status": 0,
   "message": "success",
-  "login_id": 222,
+  "loginid": 222,
   "UserID": "int型用户id如123",
   "Name": "用户名字",
   "Nickname": "微信昵称",
