@@ -1,7 +1,7 @@
 http接口
 --------------------
 
-**_domain_** http://b.xuetangx.com/
+**_domain_** http://b.xuetangx.com/oplat/
 
 > 服务端获取Authorization Code
 
