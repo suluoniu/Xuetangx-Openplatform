@@ -128,8 +128,9 @@ http接口
   "attachment": [	//附件，可选
   	{
 		"id": "xxxx",
-		"mimetype": "image/jpeg",
 		"url": "http://xxxx"
+		"size": 12212,
+		"originalname": "filename"
   	}
   ],
   "deadline": 1402334034,	//截止时间戳(精确到秒) 
