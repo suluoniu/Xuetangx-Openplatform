@@ -570,7 +570,7 @@ http接口
 		"classrooms": [{	//班级
 			"id": 2500,
 			"name": "还把",
-			"tasks": [	//实验数据，可选
+			"tasks": [	//实验数据
 				{
 					"task_id": "582d79f909d8fd4cc56fe7c7",
 					"name": "测试实验",
