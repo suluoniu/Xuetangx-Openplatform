@@ -569,9 +569,10 @@ http接口
 		"name": "还把",
 		"tasks": [	//实验数据，可选
 			{
-				"experiment_id": "582d79f909d8fd4cc56fe7c7",
+				"task_id": "582d79f909d8fd4cc56fe7c7",
 				"name": "测试实验",
 				"deadline": 1479955316,
+				"finished": 1,
 				"publish_time": 1479720278
 			}
 		]
