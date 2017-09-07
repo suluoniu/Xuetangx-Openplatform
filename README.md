@@ -205,9 +205,9 @@ http接口
 **_response_**
 ```javascript
 {
-  "status": 0, 
-  "message": 'ok',
-  "data": {
+	"status": 0, 
+	"message": 'ok',
+	"data": {
 	"task_id": {task_id},
 	"published": 1,					//0:未发布，1：已发布 
 	"publish_time": 1402334034,	  
@@ -222,13 +222,13 @@ http接口
 		"content": "xxxxx"
 	}],
 	"attachment": [  //附件，可选
-	{
-		"id": "xxxx",
-		"mimetype": "image/jpeg",
-		"url": "http://xxxx"
-	}
+		{
+			"id": "xxxx",
+			"mimetype": "image/jpeg",
+			"url": "http://xxxx"
+		}
 	]
-  }
+	}
 }
 ```
 > 上传任务行为数据
