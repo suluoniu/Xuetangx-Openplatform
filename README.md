@@ -576,6 +576,7 @@ http接口
 					"name": "测试实验",
 					"deadline": 1479955316,
 					"finished": 1,
+					"score": 60,
 					"publish_time": 1479720278
 				}, {
 					...
