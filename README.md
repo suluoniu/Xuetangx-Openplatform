@@ -205,30 +205,30 @@ http接口
 **_response_**
 ```javascript
 {
-	"status": 0, 
-	"message": 'ok',
-	"data": {
-	"task_id": {task_id},
-	"published": 1,					//0:未发布，1：已发布 
-	"publish_time": 1402334034,	  
-	"teacher_id": 1,
-	"name": "任务名称",
-	"target": "任务目标",
-	"classes": [12,13],
-	"is_pushed": 1,
-	"deadline": 1402334034,	//截止时间戳(精确到秒)
-	"custom": [{
-		"field": "任务要求",
-		"content": "xxxxx"
-	}],
-	"attachment": [  //附件，可选
-		{
-			"id": "xxxx",
-			"mimetype": "image/jpeg",
-			"url": "http://xxxx"
-		}
-	]
-	}
+    "status": 0, 
+    "message": 'ok',
+    "data": {
+        "task_id": {task_id},
+        "published": 1,					//0:未发布，1：已发布 
+        "publish_time": 1402334034,	  
+        "teacher_id": 1,
+        "name": "任务名称",
+        "target": "任务目标",
+        "classes": [12,13],
+        "is_pushed": 1,
+        "deadline": 1402334034,	//截止时间戳(精确到秒)
+        "custom": [{
+            "field": "任务要求",
+            "content": "xxxxx"
+        }],
+        "attachment": [  //附件，可选
+            {
+                "id": "xxxx",
+                "mimetype": "image/jpeg",
+                "url": "http://xxxx"
+            }
+        ]
+    }
 }
 ```
 > 上传任务行为数据
