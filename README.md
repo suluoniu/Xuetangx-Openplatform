@@ -317,7 +317,7 @@ http接口
 			"size": 12212,
 			"originalname": "filename"
 		}
-    ],
+	],
 	"data": [{		//实验数据，每个{}是一个group
 		"title": "仿真实验",
 		"content": [{
@@ -371,26 +371,34 @@ http接口
   "status": 0, 
   "message": 'ok',
   "data": {
-    "uid": 1,
-    "uname": "李磊",
-    "task_id": "xxxxx",
-    "finished": 1,					//0:未完成， 1：已完成(不可再编辑)
-    "partners": [{
+	"uid": 1,
+	"uname": "李磊",
+	"task_id": "xxxxx",
+	"finished": 1,					//0:未完成， 1：已完成(不可再编辑)
+	"partners": [{
 		"id": 1,
 		"name": "李磊"
 	}，{
 		"id": 2,
 		"name": "韩梅梅"
 	}],
-    "finish_time": 1479806204,				//报告完成时间
-    "created_time": 1479806204,				//首次提交报告时间
-    "score": -1,					//-1: 未批改，0及以上为已批改的得分  
-    "data": [{		//任务数据，每个{}是一个group
+	"attachment": [	//附件，可选
+		{
+			"id": "xxxx",
+			"url": "http://xxxx"
+			"size": 12212,
+			"originalname": "filename"
+		}
+	],
+	"finish_time": 1479806204,				//报告完成时间
+	"created_time": 1479806204,				//首次提交报告时间
+	"score": -1,					//-1: 未批改，0及以上为已批改的得分  
+	"data": [{		//任务数据，每个{}是一个group
 		"title": "仿真实验",
 		"content": [{
 			"type": "image",	//取值：image图片，text文字，wave波形数据		
 			"value": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
-		}, {
+			}, {
 			"type": "text",
 			"value": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
 		}]
@@ -401,7 +409,7 @@ http接口
 			"chart": [{
 				"unit": ["s", "V"],
 				"axis": [[0, 0], [0.2, 0.12533323356430426], [0.4, 0.24868988716485482], [0.6, 0.36812455268467797], [0.8, 0.48175367410171532]]
-			}, {
+				}, {
 				"unit": ["s", "V"],
 				"axis": [[0, 0], [0.2, 0.080000000000000002], [0.4, 0.16, 0.24000000000000002], [0.8, 0.32000000000000001], [1.6, 0.40000000000000002]]
 			}]
