@@ -310,6 +310,14 @@ http接口
 		"id": 23,
 		"name": "cba"
 	}],
+	"attachment": [	//附件，可选
+		{
+			"id": "xxxx",
+			"url": "http://xxxx"
+			"size": 12212,
+			"originalname": "filename"
+		}
+    ],
 	"data": [{		//实验数据，每个{}是一个group
 		"title": "仿真实验",
 		"content": [{
