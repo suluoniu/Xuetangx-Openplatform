@@ -299,47 +299,47 @@ http接口
 **_body_**
 ```javascript
 {
-	"access_token": {access_token},
-	"finished": 1,					//0:暂存，1:完成实验(即提交)  
-	"task_id": "xxxxxx",
-	"class_id": 12,
-	"partners": [{	//实验成员
-		"id": 1,
-		"name": "abc"
-	}, {
-		"id": 23,
-		"name": "cba"
-	}],
-	"attachment": [	//附件，可选
-		{
-			"id": "xxxx",
-			"url": "http://xxxx"
-			"size": 12212,
-			"originalname": "filename"
-		}
-	],
-	"data": [{		//实验数据，每个{}是一个group
-		"title": "仿真实验",
-		"content": [{
-			"type": "image",	//取值：image图片，text文字，wave波形数据		
-			"value": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
-		}, {
-			"type": "text",
-			"value": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
-		}]
-	}, {
-		"title": "波形数据",
-		"content": [{
-			"type": "wave",
-			"chart": [{
-				"unit": ["s", "V"],
-				"axis": [[0, 0], [0.2, 0.12533323356430426], [0.4, 0.24868988716485482], [0.6, 0.36812455268467797], [0.8, 0.48175367410171532]]
-			}, {
-				"unit": ["s", "V"],
-				"axis": [[0, 0], [0.2, 0.080000000000000002], [0.4, 0.16, 0.24000000000000002], [0.8, 0.32000000000000001], [1.6, 0.40000000000000002]]
-			}]
-		}]
-	}]
+    "access_token": {access_token},
+    "finished": 1,					//0:暂存，1:完成实验(即提交)  
+    "task_id": "xxxxxx",
+    "class_id": 12,
+    "partners": [{	//实验成员
+        "id": 1,
+        "name": "abc"
+    }, {
+        "id": 23,
+        "name": "cba"
+    }],
+    "attachment": [	//附件，可选
+        {
+            "id": "xxxx",
+            "url": "http://xxxx"
+            "size": 12212,
+            "originalname": "filename"
+        }
+    ],
+    "data": [{		//实验数据，每个{}是一个group
+        "title": "仿真实验",
+        "content": [{
+            "type": "image",	//取值：image图片，text文字，wave波形数据		
+            "value": "http://img.kanzhun.com/images/logo/20150906/f4ff637d692de37199c8665cf70746fa.jpg"
+        }, {
+            "type": "text",
+            "value": "分布式的部分可使肌肤看电视不发顺丰不数据库的"
+        }]
+    }, {
+        "title": "波形数据",
+        "content": [{
+            "type": "wave",
+            "chart": [{
+                "unit": ["s", "V"],
+                "axis": [[0, 0], [0.2, 0.12533323356430426], [0.4, 0.24868988716485482], [0.6, 0.36812455268467797], [0.8, 0.48175367410171532]]
+            }, {
+                "unit": ["s", "V"],
+                "axis": [[0, 0], [0.2, 0.080000000000000002], [0.4, 0.16, 0.24000000000000002], [0.8, 0.32000000000000001], [1.6, 0.40000000000000002]]
+            }]
+        }]
+    }]
 }
 ```
 **_response_**
