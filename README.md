@@ -609,6 +609,34 @@ http接口
 }
 ```
 
+> 创建班级
+**_url_** /user/new_classroom
+
+**_method_** POST
+
+**_body_**
+```javascript
+{
+    "access_token": {access_token},
+    "classroom": "班级名称",
+    "course_id": 123,   //课程id，该字段跟course_name2选1，在已有课程下创建班级用course_id，新创建课程用course_name
+    "course_name": "课程名称"
+}
+```
+**_response_**
+```javascript
+{
+    "status": 0,
+    "message": "正确",
+    "data": {
+        "classroom_id": 4398,   //创建的班级id
+        "classroom_name": "c",  //创建的班级名称
+        "course_id": 192,   //课程id
+        "course_name": "天体物理"   //课程名称
+    }
+}
+```
+
 > 微信相关轮询接口
 
 **_url_** /wechat/confirm
