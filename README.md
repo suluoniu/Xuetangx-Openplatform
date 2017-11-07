@@ -610,6 +610,7 @@ http接口
 ```
 
 > 创建班级
+
 **_url_** /user/new_classroom
 
 **_method_** POST
