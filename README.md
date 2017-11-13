@@ -208,24 +208,33 @@ http接口
     "status": 0, 
     "message": 'ok',
     "data": {
-        "task_id": {task_id},
-        "published": 1,					//0:未发布，1：已发布 
-        "publish_time": 1402334034,	  
+        "task_id": {task_id}, 
         "teacher_id": 1,
         "name": "任务名称",
         "target": "任务目标",
-        "classes": [12,13],
-        "is_pushed": 1,
-        "deadline": 1402334034,	//截止时间戳(精确到秒)
         "custom": [{
             "field": "任务要求",
             "content": "xxxxx"
         }],
-        "attachment": [  //附件，可选
-            {
+        "attachment": [
+            {   //附件，可选
                 "id": "xxxx",
                 "mimetype": "image/jpeg",
                 "url": "http://xxxx"
+            }
+        ],
+        "publish": [
+            {
+                "class_id": 2470,
+                "publish_time": 1510564211,	//发布时间戳(精确到秒)
+                "deadline": 1402341250,	//截止时间戳(精确到秒)
+                "is_pushed": 0  //不用关注，其他地方用
+            },
+            {
+                "class_id": 2472,
+                "publish_time": 1510564211,
+                "deadline": 1402341250,
+                "is_pushed": 0
             }
         ]
     }
