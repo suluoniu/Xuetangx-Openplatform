@@ -132,8 +132,7 @@ http接口
 		"size": 12212,
 		"originalname": "filename"
   	}
-  ],
-  "deadline": 1402334034,	//截止时间戳(精确到秒) 
+  ]
 }
 ```
 **_response_**
@@ -156,9 +155,10 @@ http接口
 **_body_**
 ```javascript
 {
-  "access_token": {access_token},
-  "task_id": {task_id},
-  "class": [1,2,3,4,10] //班级id
+    "access_token": {access_token},
+    "task_id": {task_id},
+    "class": [1,2,3,4,10], //班级id
+    "deadline": 1402334034	//截止时间戳(精确到秒) 
 }
 ```
 **_response_**
@@ -576,9 +576,18 @@ http接口
 			"task_id": "xxxx",
 			"name": "xxxx",
 			"created_time": 1479955316,
-			"classes": [2509],
-			"publish_time": 1479955316,
-			"deadline": 1479955316
+			"publish": [
+                {
+                    "class_id": 2470,
+                    "publish_time": 1510564211,
+                    "deadline": 1402341250
+                },
+                {
+                    "class_id": 2472,
+                    "publish_time": 1510564211,
+                    "deadline": 1402341250
+                }
+            ]
 		}]
 	},
 	//======学生身份======
