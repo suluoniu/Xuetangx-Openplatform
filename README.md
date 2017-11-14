@@ -371,6 +371,7 @@ http接口
 {
     "access_token": {access_token},
     "task_id": "xxxx",
+    "class_id": 123,
     "student_id": 123 //可选
 }
 ```
@@ -380,10 +381,10 @@ http接口
     "status": 0, 
     "message": 'ok',
     "data": {
-        "uid": 1,
-        "uname": "李磊",
+        "id": "xxxxx",
+        "class_id": 123,
         "task_id": "xxxxx",
-        "finished": 1,					//0:未完成， 1：已完成(不可再编辑)
+        "finished": 1,					//0:未完成， 1：已完成
         "partners": [{
             "id": 1,
             "name": "李磊"
