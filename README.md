@@ -212,6 +212,7 @@ http接口
         "teacher_id": 1,
         "name": "任务名称",
         "target": "任务目标",
+        "create_time": 1510564211,
         "custom": [{
             "field": "任务要求",
             "content": "xxxxx"
