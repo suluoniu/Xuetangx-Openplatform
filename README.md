@@ -220,6 +220,7 @@ http接口
         "attachment": [
             {   //附件，可选
                 "id": "xxxx",
+                "size": 5114,
                 "mimetype": "image/jpeg",
                 "url": "http://xxxx"
             }
