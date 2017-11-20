@@ -219,10 +219,10 @@ http接口
         }],
         "attachment": [
             {   //附件，可选
-                "id": "xxxx",
+                "id": "b85b85472e74431b8508f7db4173a689",
                 "size": 5114,
-                "mimetype": "image/jpeg",
-                "url": "http://xxxx"
+                "url": "http://ogs54adkk.bkt.clouddn.com/r/20171120/932506264435560448.xml",
+                "originalname": "Test.xml"
             }
         ],
         "publish": [
