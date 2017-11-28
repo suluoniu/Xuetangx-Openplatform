@@ -116,8 +116,8 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "name": "任务名称",
-  "target": "任务目标",
+  "name": "任务名称",   //必填
+  "target": "任务目标", //必填
   "category": "experiment",		//任务类别：["experiment"]
   "custom": [	//自定义项，可选
   	{
@@ -156,9 +156,9 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
-    "task_id": {task_id},
-    "class": [1,2,3,4,10], //班级id
-    "deadline": 1402334034	//截止时间戳(精确到秒) 
+    "task_id": {task_id},   //必填
+    "class": [1,2,3,4,10], //班级id, 必需有id
+    "deadline": 1402334034	//截止时间戳(精确到秒) 
 }
 ```
 **_response_**
@@ -178,7 +178,7 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "task_id": {task_id}
+  "task_id": {task_id}  //必填
 }
 ```
 **_response_**
@@ -199,7 +199,7 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "task_id": {task_id}
+  "task_id": {task_id}  //必填
 }
 ```
 **_response_**
@@ -252,9 +252,9 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
-    "task_id": 1,
-    "class_id": 12,
-    "action": "开始实验"
+    "task_id": 1,   //必填
+    "class_id": 12, //必填
+    "action": "开始实验"    //必填
 }
 ```
 **_response_**
@@ -274,8 +274,8 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "task_id": {task_id},
-  "class_id": 123
+  "task_id": {task_id}, //必填
+  "class_id": 123   //必填
 }
 ```
 **_response_**
@@ -313,8 +313,8 @@ http接口
 {
     "access_token": {access_token},
     "finished": 1,					//0:暂存，1:完成实验(即提交)  
-    "task_id": "xxxxxx",
-    "class_id": 12,
+    "task_id": "xxxxxx",    //必填
+    "class_id": 12, //必填
     "partners": [{	//实验成员
         "id": 1,
         "name": "abc"
@@ -373,8 +373,8 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
-    "task_id": "xxxx",
-    "class_id": 123,
+    "task_id": "xxxx",  //必填
+    "class_id": 123,    //必填
     "student_id": 123 //可选
 }
 ```
@@ -442,8 +442,8 @@ http接口
 ```javascript
 {
     "access_token": {access_token},
-    "task_id": {task_id},
-    "class_id": 123
+    "task_id": {task_id},   //必填
+    "class_id": 123 //必填
 }
 ```
 **_response_**
@@ -481,8 +481,8 @@ http接口
 ```javascript
 {
   "access_token": {access_token},
-  "task_id": {$task_id},
-  "class_id": {$class_id}
+  "task_id": {$task_id},    //必填
+  "class_id": {$class_id}   //必填
 }
 ```
 **_response_**
