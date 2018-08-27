@@ -434,7 +434,7 @@ http接口
 ```
 
 > 获取同班同学
-**_url_** /task/get_classmates
+> **_url_** /task/get_classmates
 
 **_method_** GET
 
@@ -508,6 +508,30 @@ http接口
       "avatar": "http://wx.qlogo.cn/mmopen/tnGT4YBoSbYzZWtK6Vxia7kricg3lCX5wBiatXNENEaQLgL5987viceCsiaXzSTQ4m4QceKOthibUMUlacIT3KkaTx9cFiaJ38eOQRD/0"
     }]
   }
+}
+```
+
+> 老师打分
+
+**_url_** /task/mark
+
+**_method_** POST
+
+**_body_**
+```javascript
+{
+    "access_token": {access_token},
+    "task_id": {$task_id},	//必填
+    "class_id": 12,	//必填
+    "student_id": {student_id},	//必填
+    "score": 90	//必填
+}
+```
+**_response_**
+```javascript
+{
+  "status": 0, 
+  "message": 'ok'
 }
 ```
 
